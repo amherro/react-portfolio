@@ -1,4 +1,4 @@
-import React from 'react'
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
     return (
@@ -7,16 +7,16 @@ const Navbar = () => {
                 <div className="flex-none">
                     <ul className="menu menu-horizontal p-0 flex-auto">
                         <li className="pr-5">
-                            <a className="btn btn-ghost normal-case textxl">Home</a>
+                            <Link to='/' className="btn btn-ghost normal-case textxl">Home</Link>
                         </li>
                         <li className="pr-5">
-                            <a href='#' className="btn btn-ghost normal-case textxl">Projects</a>
+                            <Link to='/projects' className="btn btn-ghost normal-case textxl">Projects</Link>
                         </li>
                         <li className="pr-5">
-                            <a href='#' className="btn btn-ghost normal-case textxl">About</a>
+                            <Link to='/about' className="btn btn-ghost normal-case textxl">About</Link>
                         </li>
                         <li className="pr-5">
-                            <a href='#' className="btn btn-ghost normal-case textxl">Contact</a>
+                            <Link to='/contact' className="btn btn-ghost normal-case textxl">Contact</Link>
                         </li>
                     </ul>
                 </div>
