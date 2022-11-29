@@ -10,7 +10,7 @@ const Header = ({ title }) => {
                 </div>
                 <Navbar />
             </div>
-            <div className="flex justify-center py-20 text-3xl font-bold">
+            <div className="flex justify-center py-20 text-5xl font-bold">
                 <h1>{title}</h1>
             </div>
         </header>
