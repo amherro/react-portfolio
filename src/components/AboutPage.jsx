@@ -1,7 +1,9 @@
+import Header from '../components/Header'
+
 const About = () => {
     return (
         <div>
-            <h1>About Page</h1>
+            <Header title='About' />
         </div>
     )
 }

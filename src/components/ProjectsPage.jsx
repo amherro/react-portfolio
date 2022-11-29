@@ -1,8 +1,10 @@
-import React from 'react'
+import Header from '../components/Header'
 
 const ProjectsPage = () => {
     return (
-        <div>Projects Page</div>
+        <div>
+            <Header title='My Projects' />
+        </div>
     )
 }
 
