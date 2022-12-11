@@ -5,12 +5,12 @@ const Header = ({ title }) => {
         <header>
             <div className="header-container">
                 <div className="logo_section p-5">
-                    <h1 className="text-4xl pb-3">Adam Herro</h1>
-                    <h2 className="text-2xl">Full Stack Developer</h2>
+                    <h1 className="pb-3 text-5xl font-bold">Adam Herro</h1>
+                    <h2 className="text-4xl font-bold">Full Stack Developer</h2>
                 </div>
                 <Navbar />
             </div>
-            <div className="flex justify-center py-20 text-5xl font-bold">
+            <div className="flex justify-center py-20 text-4xl font-bold">
                 <h1>{title}</h1>
             </div>
         </header>
