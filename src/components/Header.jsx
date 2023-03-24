@@ -10,9 +10,10 @@ const Header = ({ title }) => {
                 </div>
                 <Navbar />
             </div>
-            <div className="flex justify-center py-20 text-4xl font-bold">
+            
+            {title === null ? console.log('first') : <div className="flex justify-center py-20 text-4xl font-bold">
                 <h1>{title}</h1>
-            </div>
+            </div>}
         </header>
     )
 }
