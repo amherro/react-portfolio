@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 const HomeHero = () => {
     return (
-        <div className="hero">
+        <div className="hero pt-20">
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <img src="https://placeimg.com/260/400/arch" alt='Adam' className="max-w-sm rounded-lg shadow-2xl" />
                 <div className='w-2/4'>

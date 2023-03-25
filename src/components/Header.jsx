@@ -6,7 +6,7 @@ const Header = ({ title }) => {
             <div className="header-container">
                 <div className="logo_section p-5">
                     <h1 className="pb-3 text-5xl font-bold">Adam Herro</h1>
-                    <h2 className="text-4xl font-bold">Full Stack Developer</h2>
+                    <h2 className="text-4xl font-bold">Front End Developer</h2>
                 </div>
                 <Navbar />
             </div>
