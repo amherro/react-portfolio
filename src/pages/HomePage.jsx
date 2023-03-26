@@ -1,5 +1,6 @@
 import Header from '../components/Header'
 import HomeHero from '../components/HomeHero'
+import HomeProjects from '../components/HomeProjects'
 import HomeTechnologies from '../components/HomeTechnologies'
 const Home = () => {
     return (
@@ -7,6 +8,7 @@ const Home = () => {
             <Header title={null} />
             <HomeHero />
             <HomeTechnologies />
+            <HomeProjects />
             {/* Portfolio Section and About Section with buttons to pages in same row  */}
             {/* Contact section with button to page */}
             {/* Footer */}

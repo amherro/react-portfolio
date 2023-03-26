@@ -22,6 +22,10 @@ li {
   list-style: none;
 }
 
+.nav-buttons {
+  font-size: 18px;
+}
+
 .menu {
   display: flex;
 }
@@ -37,6 +41,10 @@ a {
 .headshot {
   width: 325px;
   height: 400px;
+}
+
+.skills-title {
+  padding-right: 76px;
 }
 
 .logo {
