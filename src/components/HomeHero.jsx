@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom"
+import headshot from '../img/portfolio_photo.jpg'
 
 const HomeHero = () => {
     return (
         <div className="hero pt-20">
             <div className="hero-content flex-col lg:flex-row-reverse">
-                <img src="https://placeimg.com/260/400/arch" alt='Adam' className="max-w-sm rounded-lg shadow-2xl" />
+                <img src={headshot} alt='Adam' className="headshot max-w-sm rounded-lg shadow-2xl" />
                 <div className='w-2/4'>
                     <h1 className="text-4xl font-bold">Welcome to my portfolio!</h1>
                     <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
