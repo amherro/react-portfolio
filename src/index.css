@@ -51,3 +51,18 @@ a {
   width: 25px;
   height: 52px;
 }
+
+.github-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.github-logo-btn {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.github-text-footer {
+  position: absolute;
+}

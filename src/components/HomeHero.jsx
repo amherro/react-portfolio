@@ -3,7 +3,7 @@ import headshot from '../img/portfolio_photo.jpg'
 
 const HomeHero = () => {
     return (
-        <div className="hero pt-20">
+        <div className="hero pt-20 pb-10">
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <img src={headshot} alt='Adam' className="headshot max-w-sm rounded-lg shadow-2xl" />
                 <div className='w-2/4'>
