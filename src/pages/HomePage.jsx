@@ -1,3 +1,4 @@
+import AboutContact from '../components/AboutContact'
 import Header from '../components/Header'
 import HomeHero from '../components/HomeHero'
 import HomeProjects from '../components/HomeProjects'
@@ -9,8 +10,7 @@ const Home = () => {
             <HomeHero />
             <HomeTechnologies />
             <HomeProjects />
-            {/* Portfolio Section and About Section with buttons to pages in same row  */}
-            {/* Contact section with button to page */}
+            <AboutContact />
             {/* Footer */}
         </div>
     )

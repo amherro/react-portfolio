@@ -8,7 +8,7 @@ const HomeHero = () => {
                 <img src={headshot} alt='Adam' className="headshot max-w-sm rounded-lg shadow-2xl" />
                 <div className='w-2/4'>
                     <h1 className="text-4xl font-bold">Welcome to my portfolio!</h1>
-                    <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <p className="py-6">Feel free to browse my most recent projects on the projects page. If you would like to get in touch, please use the information on the Contact page.</p>
                     <Link to='/projects'>
                         <button className="btn btn-primary mr-5">
                             View Projects
