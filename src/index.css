@@ -66,3 +66,51 @@ a {
 .github-text-footer {
   position: absolute;
 }
+
+.image-overlay {
+  width: 200px;
+  height: 100px;
+}
+
+.image-overlay:after, .image-overlay:before {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+.image-overlay:after {
+  content: '\A';
+  width: 200px;
+  height: 93px;
+  top: 0; left:0;
+  background:rgba(0,0,0,0.8);
+}
+.image-overlay:before {
+  content: attr(data-overlay-title);
+  height: 93px;
+  color: #fff;
+  z-index: 1;
+  bottom: 0;
+  padding: 2px 60px;
+  text-align: center;
+  /* background: #f00; */
+  box-sizing: border-box;
+  -moz-box-sizing:border-box;
+}
+
+.image-overlay:hover:after, .image-overlay:hover:before {
+  opacity: 1;
+}
+
+.open-modal-button {
+  opacity: 0;
+  position: relative;
+  top: -35px;
+}
+
+.image-overlay:hover > .open-modal-button, .open-modal-button:hover {
+  opacity: 1;
+  z-index: 999;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
