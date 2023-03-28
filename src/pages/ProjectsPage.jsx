@@ -1,13 +1,20 @@
 import Header from '../components/Header'
 import Project from '../components/Project'
-import libraryPhoto from '../img/library_screenshot.png'
+import Projects from '../projectsList'
 
 const ProjectsPage = () => {
     return (
         <div>
             <Header title='My Projects' />
-            <div className="grid grid-cols-3">
-                <Project source={libraryPhoto} title='Library App' screenshot={libraryPhoto} description='A library web app to keep track of all the books in your life. This project uses ES6 classes to handle the logic, as well as local storage so users can save their entries in their browser.' liveUrl='https://amherro.github.io/Library/' githubUrl='https://github.com/amherro/Library' />
+            {/* <div className="grid lg:grid-cols-3 md:grid-cols-1 col-auto justify-items-center w-2/3 gap-2 m-auto">
+                {Projects.map(project => (
+                    <Project key={project.id} id={project.id} source={project.img} title={project.title} screenshot={project.img} description={project.description} liveUrl={project.liveUrl} githubUrl={project.githubUrl} />
+                ))}
+            </div> */}
+            <div className="flex flex-wrap justify-center">
+                {Projects.map(project => (
+                    <Project className='image-size' key={project.id} id={project.id} source={project.img} title={project.title} screenshot={project.img} description={project.description} liveUrl={project.liveUrl} githubUrl={project.githubUrl} />
+                ))}
             </div>
         </div>
     )
