@@ -7,7 +7,7 @@ const Project = ({id, source, title, description, liveUrl, githubUrl}) => {
     <div>
         <div className="image-overlay image-size card relative m-2" data-overlay-title={title}>
             <img src={source} alt={title} className='project-screenshot image-size w-full align-top relative'/>
-            <label htmlFor={`project-modal-${id}`} className='open-modal-button card-action btn btn-primary btn-sm ml-5 mr-5'>
+            <label htmlFor={`project-modal-${id}`} className='open-modal-button card-action btn btn-primary btn-sm w-1/3 ml-5 mr-5'>
                 Open
                 <Icon path={mdiOpenInApp} size={1} className='ml-2' />
             </label>

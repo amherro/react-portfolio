@@ -110,7 +110,8 @@ a {
 .open-modal-button {
   opacity: 0;
   position: relative;
-  top: -35px;
+  top: -45px;
+  margin: auto;
 }
 
 .image-overlay:hover > .open-modal-button, 
@@ -119,4 +120,9 @@ a {
   z-index: 999;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
+}
+
+.contact-card {
+  width: 355px;
+  height: 136px;
 }

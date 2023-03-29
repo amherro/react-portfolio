@@ -16,7 +16,7 @@ const HomeHero = () => {
                     </Link>
 
                     <Link to='/contact'>
-                        <button className="btn bg-[#f4f4f4] text-black border-primary border-4">
+                        <button className="btn btn-primary">
                             Contact Me
                         </button>
                     </Link>
