@@ -8,7 +8,7 @@ import tailwindImg from '../img/tailwindcss-logo.svg'
 const HomeTechnologies = () => {
   return (
     // FIGURE OUT SPACING OF CARDS IN THE GRID \\
-    <div className="grid grid-cols-2 py-20 bg-white">
+    <div className="grid md:grid-cols-2 py-20 bg-white">
         <div className="tech-title-container self-center">
             <h2 className='technology-header self-center pb-5 text-center text-5xl font-bold text-black'>Technologies</h2>
             <h2 className='skills-title self-center pb-10 text-center text-5xl font-bold text-black'>and Skills</h2>
