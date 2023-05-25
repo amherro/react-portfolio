@@ -7,7 +7,7 @@ const Project = ({id, source, title, description, liveUrl, githubUrl}) => {
     <div>
         <div className="image-overlay image-size card relative m-2" data-overlay-title={title}>
             <img src={source} alt={title} className='project-screenshot image-size w-full align-top relative'/>
-            <label htmlFor={`project-modal-${id}`} className='open-modal-button card-action btn btn-primary btn-sm w-1/3 ml-5 mr-5'>
+            <label htmlFor={`project-modal-${id}`} className='open-modal-button card-action btn btn-primary bg-green-700 border-green-700 hover:bg-green-900 hover:border-green-900 btn-sm w-1/3 ml-5 mr-5'>
                 Open
                 <Icon path={mdiOpenInApp} size={1} className='ml-2' />
             </label>
@@ -24,8 +24,8 @@ const Project = ({id, source, title, description, liveUrl, githubUrl}) => {
                 </a>
                 <p className='text-center'>{description}</p>
                 <div className="flex justify-center mt-4">
-                    <a href={liveUrl} className='btn btn-primary m-2 ml-0'>Demo</a>
-                    <a href={githubUrl} className='btn btn-primary m-2'>
+                    <a href={liveUrl} className='btn btn-primary bg-green-700 border-green-700 hover:bg-green-900 hover:border-green-900 m-2 ml-0'>Demo</a>
+                    <a href={githubUrl} className='btn btn-primary bg-green-700 border-green-700 hover:bg-green-900 hover:border-green-900 m-2'>
                         GitHub
                         <img src={githubLogo} alt="GitHub Logo" className="github-logo-btn" />
                     </a>

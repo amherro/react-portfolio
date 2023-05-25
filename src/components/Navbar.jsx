@@ -4,19 +4,6 @@ import { Link } from "react-router-dom"
 // import { mdiMenu } from '@mdi/js';
 
 const Navbar = () => {
-    // const [mobile, setMobile] = useState(false)
-
-    // let screenWidth = window.innerWidth
-    // console.log(screenWidth)
-
-    // useEffect(() => {
-    //     if(screenWidth <= 576) {
-    //         setMobile(true)
-    //     } 
-    // }, [screenWidth])
-
-    
-
     return (
         <div className="menu_section flex flex-col self-center pt-8 pb-0">
             <div className="navbar">
