@@ -6,7 +6,7 @@ const About = () => {
         <div className=''>
             <Header title='About Me' />
             <div className="lg:grid lg:grid-cols-2">
-                <img src={headshot} alt="Adam" className='headshot ml-24 mt-4 max-w-sm rounded-lg shadow-2xl order-2' />
+                <img src={headshot} alt="Adam" className='headshot sm:ml-24 m-auto mt-4 max-w-sm rounded-lg shadow-2xl order-2' />
                 <div className="flex flex-col order-1">         
                     <div className="card lg:items-end items-center">
                         <p className='w-2/3 card-body bg-base-200 m-5'>I am currently employed as a front end developer in Cincinnati, OH. I love working with React and I am always working to improve my skills. React is my language of choice for my current projects.</p>

@@ -1,12 +1,14 @@
 // import { useState, useEffect } from "react";
 import { Link } from "react-router-dom"
-// import Icon from '@mdi/react';
-// import { mdiMenu } from '@mdi/js';
+import Icon from '@mdi/react';
+import { mdiMenu } from '@mdi/js';
+import { useMediaQuery } from 'react-responsive';
 
 const Navbar = () => {
+    const isMobile = useMediaQuery({ query: `(max-width: 760px)` });
     return (
         <div className="menu_section flex flex-col self-center pt-8 pb-0">
-            <div className="navbar">
+            {/* <div className="navbar">
                     <div className="flex-none">
                         <ul className="menu menu-horizontal p-0 flex-auto">
                             <li className="pr-5">
@@ -23,10 +25,10 @@ const Navbar = () => {
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div> */}
 
                 {/* Hamburger menu on mobile */}
-            {/* {mobile ? (
+            {isMobile ? (
                 <div className="dropdown flex flex-col">
                     <label tabIndex={0} className="btn px-20 m-auto">
                         <Icon path={mdiMenu} size={1.5} />
@@ -65,7 +67,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                 </div>
-            )} */}
+            )}
         </div>
     )
 }
