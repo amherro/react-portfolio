@@ -4,7 +4,7 @@ const Header = ({ title }) => {
     return (
         <header>
             <div className="header-container flex flex-col lg:flex-row flex-wrap">
-                <div className="logo_section p-5">
+                <div className="logo_section p-5 text-center sm:text-start">
                     <h1 className="pb-3 text-5xl font-bold">Adam Herro</h1>
                     <h2 className="text-4xl font-bold">Front End Developer</h2>
                 </div>

@@ -7,7 +7,7 @@ import tailwindImg from '../img/tailwindcss-logo.svg'
 
 const HomeTechnologies = () => {
   return (
-    <div className="grid md:grid-cols-2 py-20">
+    <div className="grid md:grid-cols-2 py-10">
         <div className="tech-title-container self-center">
             <h2 className='technology-header self-center pb-5 pl-3 text-center text-5xl font-bold'>Technologies</h2>
             <h2 className='skills-title self-center pb-10 pl-3 text-center text-5xl font-bold'>and Skills</h2>
