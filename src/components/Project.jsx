@@ -16,7 +16,7 @@ const Project = ({id, source, title, description, liveUrl, githubUrl}) => {
         {/* ********* Modal ********* */}
         <input type="checkbox" id={`project-modal-${id}`} className="modal-toggle" />
         <div className="modal">
-            <div className="modal-box">
+            <div className="modal-box bg-base-200">
                 <label htmlFor={`project-modal-${id}`} className="btn btn-sm btn-circle hover:bg-red-500 hover:text-white absolute right-2 top-2">✕</label>
                 <h1 className='text-center text-3xl font-bold mb-2'>{title}</h1>
                 <a href={liveUrl}>
