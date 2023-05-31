@@ -3,7 +3,7 @@ import githubLogo from '../img/github-logo.png'
 const Footer = () => {
   return (
     <footer>
-        <div className="footer-container flex p-10 justify-center items-center bg-base-200">
+        <div className="footer-container flex p-10 justify-center items-center bg-zinc-800">
             <a href="https://github.com/amherro">
                 <img src={githubLogo} alt="Github Logo" className='github-logo' />
             </a>
