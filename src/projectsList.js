@@ -19,7 +19,7 @@ const Projects = [
         id: 2,
         title: 'Resume Creator',
         img: resumeImg,
-        description: 'A React resume creator built using React classes to handle the functionality, and custom CSS stylesheets to handle the design. It makes heavy use of state and props to interact with the virtual DOM.',
+        description: 'A React resume creator built using React classes to handle the functionality and custom CSS stylesheets to handle the design. It makes heavy use of state and props to interact with the virtual DOM.',
         liveUrl: 'https://amherro.github.io/CV-React-App/',
         githubUrl: 'https://github.com/amherro/CV-React-App'
     },
@@ -51,7 +51,7 @@ const Projects = [
         id: 6,
         title: 'Hunting Website',
         img: huntingImg,
-        description: 'This project is a landing page for a fake hunting outfitter. It was one of the first projects I did to gain practical experience in HTML and CSS. It also uses JavaScript event listeners to open and close the menu.',
+        description: 'This project is a landing page for a fictional hunting outfitter. It was one of the first projects I did to gain practical experience in HTML and CSS. It also uses JavaScript event listeners to open and close the menu.',
         liveUrl: 'https://amherro.github.io/Hunting-Guide-Page/',
         githubUrl: 'https://github.com/amherro/Hunting-Guide-Page'
     },
