@@ -15,7 +15,7 @@ const Header = ({ title }) => {
       </div>
 
       {title === null ? (
-        console.log('first')
+        console.log('No title')
       ) : (
         <div className="flex justify-center py-20 pb-16 text-4xl font-bold">
           <h1>{title}</h1>

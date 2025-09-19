@@ -17,7 +17,7 @@ const HomeTechnologies = () => {
           and Skills
         </h2>
       </div>
-      <div className="grid md:grid-cols-2">
+      <div className="grid justify-center md:grid-cols-2">
         <TechnologyCard techName="HTML" imgSrc={htmlImg} altText="HTML5 Logo" />
         <TechnologyCard techName="CSS" imgSrc={cssImg} altText="CSS Logo" />
         <TechnologyCard

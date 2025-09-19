@@ -9,7 +9,7 @@ const About = () => {
         <img
           src={headshot}
           alt="Adam"
-          className="headshot sm:ml-24 m-auto mt-0 max-w-sm rounded-lg shadow-2xl order-2 mb-5"
+          className="headshot sm:ml-24 m-auto mt-0 max-w-sm shadow-2xl order-2 mb-5"
         />
         <div className="flex flex-col order-1">
           <div className="card lg:items-end items-center">
