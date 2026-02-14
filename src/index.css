@@ -55,15 +55,13 @@ a {
 .track {
   display: flex;
   width: max-content;
+  will-change: transform;
   animation: scroll-left 17s linear infinite;
-}
-
-.card {
-  flex: 0 0 7rem;
 }
 
 .card-wrapper {
   display: flex;
+  flex-shrink: 0;
 }
 
 .github-logo {
@@ -148,11 +146,5 @@ a {
   }
   to {
     transform: translate3d(-50%, 0, 0);
-  }
-}
-
-@media (width >= 48rem) {
-  .card {
-    flex: 0 0 15rem;
   }
 }
