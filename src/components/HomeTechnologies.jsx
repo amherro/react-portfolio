@@ -12,7 +12,7 @@ const HomeTechnologies = () => {
       <h2 className="mb-10 mx-3 pl-3 text-center text-4xl md:text-5xl font-bold">
         Technologies and Skills
       </h2>
-      <div id="carousel" className="flex carousel bg-zinc-800 py-10 mb-10">
+      <div id="carousel" className="carousel bg-zinc-800 py-10 mb-10">
         <div className="track flex">
           <div className="card-wrapper flex align-center justify-center">
             <TechnologyCard
