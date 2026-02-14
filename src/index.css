@@ -46,11 +46,16 @@ a {
 }
 
 .carousel {
-  overflow-x: auto;
-  overscroll-behavior: contain;
+  overflow: hidden;
 }
 .carousel::-webkit-scrollbar {
   display: none;
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 17s linear infinite;
 }
 
 .card {
@@ -58,13 +63,8 @@ a {
 }
 
 .card-wrapper {
-  animation: scroll-left 17s infinite linear;
+  display: flex;
 }
-
-/* .logo {
-  width: 3rem;
-  height: 3rem;
-} */
 
 .github-logo {
   width: 50px;
@@ -144,10 +144,10 @@ a {
 
 @keyframes scroll-left {
   from {
-    translate: 0;
+    transform: translate3d(0, 0, 0);
   }
   to {
-    translate: -100%;
+    transform: translate3d(-50%, 0, 0);
   }
 }
 
