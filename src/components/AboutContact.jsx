@@ -16,7 +16,7 @@ const AboutContact = () => {
           </button>
         </Link>
       </div>
-      <div className="about-section card card-bordered border-zinc-80 w-[300px] h-[300px] lg:w-[350px] lg:h-[300px] mb-3 py-5 justify-self-center bg-zinc-800">
+      <div className="contact-section card card-bordered border-zinc-800 w-[300px] h-[300px] lg:w-[350px] lg:h-[300px] mb-3 py-5 justify-self-center bg-zinc-800">
         <h2 className="card-title self-center p-3 text-3xl lg:text-5xl font-bold">
           Contact
         </h2>
