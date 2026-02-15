@@ -66,7 +66,37 @@ const HomeTechnologies = () => {
             />
           </div>
           <div
-            ref={wrapperRef}
+            className="card-wrapper flex align-center justify-center"
+            aria-hidden
+          >
+            <TechnologyCard
+              techName="HTML"
+              imgSrc={htmlImg}
+              altText="HTML5 Logo"
+            />
+            <TechnologyCard techName="CSS" imgSrc={cssImg} altText="CSS Logo" />
+            <TechnologyCard
+              techName="Javascript"
+              imgSrc={jsImg}
+              altText="Javascript Logo"
+            />
+            <TechnologyCard
+              techName="React"
+              imgSrc={reactImg}
+              altText="React Logo"
+            />
+            <TechnologyCard
+              techName="GSAP Animation"
+              imgSrc={gsapImg}
+              altText="Greensock Logo"
+            />
+            <TechnologyCard
+              techName="Tailwind CSS"
+              imgSrc={tailwindImg}
+              altText="Tailwind CSS Logo"
+            />
+          </div>
+          <div
             className="card-wrapper flex align-center justify-center"
             aria-hidden
           >
