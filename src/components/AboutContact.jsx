@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 const AboutContact = () => {
   return (
     <div className="md:grid md:grid-cols-2 flex flex-col items-center p-10">
-      <div className="about-section card card-bordered border-zinc-800 bg-zinc-800 w-[300px] h-[300px] lg:w-[350px] lg:h-[300px] justify-self-center mb-3 py-5 md:m-0 bg-zinc-800">
-        <h2 className="card-title self-center p-3 text-4xl md:text-5xl font-bold">
+      <div className="about-section card card-bordered border-zinc-800 bg-zinc-800 w-[300px] h-[300px] lg:w-[350px] lg:h-[300px] justify-self-center mb-3 py-5 md:m-0">
+        <h2 className="card-title self-center p-3 text-3xl md:text-5xl font-bold">
           About Me
         </h2>
-        <p className="card-body">
+        <p className="card-body text-center">
           Visit the About page to learn a little more about who I am.
         </p>
         <Link to="/about" className="card-actions justify-center mt-0">
@@ -17,10 +17,10 @@ const AboutContact = () => {
         </Link>
       </div>
       <div className="about-section card card-bordered border-zinc-80 w-[300px] h-[300px] lg:w-[350px] lg:h-[300px] mb-3 py-5 justify-self-center bg-zinc-800">
-        <h2 className="card-title self-center p-3 text-4xl lg:text-5xl font-bold">
+        <h2 className="card-title self-center p-3 text-3xl lg:text-5xl font-bold">
           Contact
         </h2>
-        <p className="card-body">
+        <p className="card-body text-center">
           Visit the Contact page if you would like to get in touch or are
           interested in working together.
         </p>

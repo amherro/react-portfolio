@@ -3,11 +3,11 @@ import githubLogo from '../img/github-logo.png';
 const HomeProjects = () => {
   return (
     <div className="grid md:grid-cols-2 mt-10 mb-10 lg:mb-[8rem]">
-      <h2 className="self-center pb-5 text-center text-4xl md:text-5xl font-bold">
+      <h2 className="self-center pb-5 text-center text-3xl md:text-5xl font-bold">
         My Projects
       </h2>
       <div className="right-section flex flex-col items-center md:items-start">
-        <h3 className="text-xl font-bold w-4/5">
+        <h3 className="text-lg font-bold w-4/5">
           Please visit the Projects page or my GitHub to see what I have been
           working on.
         </h3>

@@ -150,6 +150,6 @@ a {
     transform: translate3d(0, 0, 0);
   }
   to {
-    transform: translate3d(calc(-50% - 1px), 0, 0);
+    transform: translate3d(calc(-1 * var(--scroll-distance)), 0, 0);
   }
 }
