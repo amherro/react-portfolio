@@ -66,6 +66,7 @@ const HomeTechnologies = () => {
             />
           </div>
           <div
+            ref={wrapperRef}
             className="card-wrapper flex align-center justify-center"
             aria-hidden
           >
