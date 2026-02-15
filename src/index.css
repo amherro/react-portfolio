@@ -7,6 +7,10 @@ body {
   color: #fff;
 }
 
+img {
+  display: block;
+}
+
 .header-container {
   display: flex;
   justify-content: space-evenly;
@@ -62,6 +66,7 @@ a {
 .card-wrapper {
   display: flex;
   flex-shrink: 0;
+  width: max-content;
 }
 
 .github-logo {
@@ -145,6 +150,6 @@ a {
     transform: translate3d(0, 0, 0);
   }
   to {
-    transform: translate3d(-50%, 0, 0);
+    transform: translate3d(calc(-50% - 1px), 0, 0);
   }
 }
