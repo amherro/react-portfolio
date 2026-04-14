@@ -4,7 +4,7 @@ import Navbar from './Navbar';
 const Header = ({ title }) => {
   return (
     <header>
-      <div className="header-container flex flex-col lg:flex-row flex-wrap">
+      <div className="flex justify-evenly items-center flex-col lg:flex-row flex-wrap">
         <div className="logo_section p-5 text-center sm:text-start">
           <Link to="/">
             <h1 className="pb-3 text-5xl font-bold">Adam Herro</h1>
