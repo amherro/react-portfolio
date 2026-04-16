@@ -11,7 +11,7 @@ const Navbar = () => {
              {/* Hamburger menu on mobile */}
             {isMobile ? (
                 <div className="dropdown flex flex-col">
-                    <label tabIndex={0} className="btn bg-zinc-800 px-20 m-auto">
+                    <label tabIndex={0} className="btn bg-zinc-800 border-b-zinc-800 px-20 m-auto">
                         <Icon path={mdiMenu} size={1.5} />
                     </label>
                     <ul tabIndex={0} className="dropdown-content menu mt-14 shadow bg-zinc-800 rounded-box w-60 flex-auto justify-self-center">
