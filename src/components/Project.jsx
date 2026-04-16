@@ -16,13 +16,13 @@ const Project = ({id, source, title, description, liveUrl, githubUrl}) => {
         {/* ********* Modal ********* */}
         <input type="checkbox" id={`project-modal-${id}`} className="modal-toggle" />
         <div className="modal">
-            <div className="modal-box bg-zinc-800">
+            <div className="modal-box md:max-w-[52rem] md:max-h-[100vh] bg-zinc-800">
                 <label htmlFor={`project-modal-${id}`} className="btn btn-sm btn-circle hover:bg-red-500 hover:text-white absolute right-2 top-2">✕</label>
                 <h1 className='text-center text-3xl font-bold mb-2'>{title}</h1>
                 <a href={liveUrl}>
                     <img src={source} alt={title} className='w-3/4 self-center ml-auto mr-auto m-4' />
                 </a>
-                <p className='text-center'>{description}</p>
+                <p className='md:w-[36.5rem] justify-self-center text-center'>{description}</p>
                 <div className="flex justify-center mt-4">
                     <a href={liveUrl} className='btn btn-primary bg-green-700 border-green-700 hover:bg-green-900 hover:border-green-900 m-2 ml-0'>Demo</a>
                     <a href={githubUrl} className='btn btn-primary bg-green-700 border-green-700 hover:bg-green-900 hover:border-green-900 m-2'>

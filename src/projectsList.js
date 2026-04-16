@@ -1,3 +1,4 @@
+import vaudify from './img/vaudify-image.jpg';
 import hockeyShop from './img/hockey-pro-shop-img.png';
 import toDoPhoto from './img/todo-app.png';
 import libraryPhoto from './img/library_screenshot.png';
@@ -10,6 +11,15 @@ import googleImg from './img/Google_Home_Img.png';
 const Projects = [
   {
     id: 1,
+    title: 'Vaudify.com',
+    img: vaudify,
+    description:
+      'Vaudify is a web tool that extracts audio from video files and downloads them as MP3s. Built with Astro, React, Tailwind, and an Express backend, it supports single-file and batch conversions (outputting a ZIP) with real-time status tracking. The backend uses FFmpeg for conversion and includes rate limiting to protect the API. The UI features a drag-and-drop upload zone and a live conversion queue.',
+    liveUrl: 'https://vaudify.com/',
+    githubUrl: 'https://github.com/amherro/video-to-audio',
+  },
+  {
+    id: 2,
     title: 'Hockey Store',
     img: hockeyShop,
     description:
@@ -18,7 +28,7 @@ const Projects = [
     githubUrl: 'https://github.com/amherro/react-portfolio',
   },
   {
-    id: 2,
+    id: 3,
     title: 'To Do App',
     img: toDoPhoto,
     description:
@@ -27,7 +37,7 @@ const Projects = [
     githubUrl: 'https://github.com/amherro/to-do-react-app',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Resume Creator',
     img: resumeImg,
     description:
@@ -36,7 +46,7 @@ const Projects = [
     githubUrl: 'https://github.com/amherro/CV-React-App',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Library App',
     img: libraryPhoto,
     description:
@@ -45,7 +55,7 @@ const Projects = [
     githubUrl: 'https://github.com/amherro/Library',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Mobile Calculator',
     img: calcImg,
     description:
@@ -54,7 +64,7 @@ const Projects = [
     githubUrl: 'https://github.com/amherro/Calculator-App',
   },
   {
-    id: 6,
+    id: 7,
     title: 'Etch-A-Sketch',
     img: etchImg,
     description:
@@ -62,24 +72,24 @@ const Projects = [
     liveUrl: 'https://amherro.github.io/Etch-A-Sketch/',
     githubUrl: 'https://github.com/amherro/Etch-A-Sketch',
   },
-  {
-    id: 7,
-    title: 'Hunting Website',
-    img: huntingImg,
-    description:
-      'This project is a landing page for a fictional hunting outfitter. It was one of the first projects I did to gain practical experience in HTML and CSS. It also uses JavaScript event listeners to open and close the menu.',
-    liveUrl: 'https://amherro.github.io/Hunting-Guide-Page/',
-    githubUrl: 'https://github.com/amherro/Hunting-Guide-Page',
-  },
-  {
-    id: 8,
-    title: 'Google Homepage',
-    img: googleImg,
-    description:
-      'This clone of the Google home page was my very first project I worked on while learning HTML and CSS. I was able to use all of the basics of both languages as well as experiment with other concepts like Grid and Flexbox.',
-    liveUrl: 'https://amherro.github.io/Google-Homepage/',
-    githubUrl: 'https://github.com/amherro/Google-Homepage',
-  },
+  // {
+  //   id: 7,
+  //   title: 'Hunting Website',
+  //   img: huntingImg,
+  //   description:
+  //     'This project is a landing page for a fictional hunting outfitter. It was one of the first projects I did to gain practical experience in HTML and CSS. It also uses JavaScript event listeners to open and close the menu.',
+  //   liveUrl: 'https://amherro.github.io/Hunting-Guide-Page/',
+  //   githubUrl: 'https://github.com/amherro/Hunting-Guide-Page',
+  // },
+  // {
+  //   id: 8,
+  //   title: 'Google Homepage',
+  //   img: googleImg,
+  //   description:
+  //     'This clone of the Google home page was my very first project I worked on while learning HTML and CSS. I was able to use all of the basics of both languages as well as experiment with other concepts like Grid and Flexbox.',
+  //   liveUrl: 'https://amherro.github.io/Google-Homepage/',
+  //   githubUrl: 'https://github.com/amherro/Google-Homepage',
+  // },
 ];
 
 export default Projects;
