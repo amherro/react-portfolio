@@ -6,11 +6,13 @@ import HomeTechnologies from '../components/HomeTechnologies'
 const Home = () => {
     return (
         <div>
-            <Header title={null} />
-            <HomeHero />
-            <HomeTechnologies />
-            <HomeProjects />
-            <AboutContact />
+            <Header />
+            <div className="content-container pt-[125px]">
+                <HomeHero />
+                <HomeTechnologies />
+                <HomeProjects />
+                <AboutContact />
+            </div>
             {/* Footer */}
         </div>
     )

@@ -1,26 +1,17 @@
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 
-const Header = ({ title }) => {
+const Header = () => {
   return (
-    <header>
-      <div className="flex justify-evenly items-center flex-col lg:flex-row flex-wrap">
-        <div className="logo_section p-5 text-center sm:text-start">
+    <header className='fixed top-0 w-full z-50'>
+      <div className="flex justify-around items-center flex-col lg:flex-row flex-wrap static">
+        <div className="logo_section mt-10 text-center sm:text-start">
           <Link to="/">
-            <h1 className="pb-3 text-5xl font-bold">Adam Herro</h1>
-            <h2 className="text-4xl font-bold">Front End Developer</h2>
+            <h1 className="header-logo">adam<span className='logo-period'>.</span>herro</h1>
           </Link>
         </div>
         <Navbar />
       </div>
-
-      {title === null ? (
-        console.log('No title')
-      ) : (
-        <div className="flex justify-center py-20 pb-16 text-4xl font-bold">
-          <h1>{title}</h1>
-        </div>
-      )}
     </header>
   );
 };
