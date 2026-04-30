@@ -42,6 +42,10 @@ button {
   height: 3rem;
 }
 
+h2 {
+  font-family: var(--font-display);
+}
+
 
 header {
   background: rgba(10, 10, 15, 0.85);
@@ -90,10 +94,12 @@ li {
 .cta {
   color: var(--accent);
   border: 1px solid var(--border-accent);
+  transition: scale 0.15s ease-out;
 }
 
 .cta:hover {
   border: 1px solid var(--accent);
+  scale: 1.05;
 }
 
 .menu {
@@ -144,6 +150,12 @@ li {
 .hero-projects-button {
   background: var(--accent);
   color: #000;
+  clip-path: polygon(0% 0%, 90% 0%, 100% 25%, 100% 100%, 0% 100%);
+  transition: scale 0.15s ease-out;
+}
+
+.hero-projects-button:hover {
+  scale: 1.05;
 }
 
 .hero-contact-button {
@@ -156,9 +168,16 @@ li {
   color: #fff;
 }
 
-.headshot {
-  border-radius: 12.5rem;
+.img-border-1 {
+  width: 60%;
+  height: 100%;
+  border: 1px solid var(--border-accent);
+  clip-path: polygon(20px 0%, 100% 0%, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0% 100%, 0% 20px);
 }
+
+/* .headshot {
+  border-radius: 12.5rem;
+} */
 
 .skills-title {
   padding-right: 76px;
@@ -194,6 +213,10 @@ li {
   width: 20px;
   height: 20px;
   margin-left: 10px;
+}
+
+footer p {
+  font-family: var(--font-display);
 }
 
 .github-text-footer {

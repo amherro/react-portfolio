@@ -28,11 +28,11 @@ const HomeTechnologies = () => {
   }, []);
 
   return (
-    <div className="flex flex-col pt-10 lg:my-20 bg-zinc-800">
+    <div className="flex flex-col pt-10 lg:my-20">
       <h2 className="mb-5 mx-3 pl-3 text-center text-3xl md:text-5xl font-bold">
         Technologies and Skills
       </h2>
-      <div id="carousel" className="carousel bg-zinc-800 py-10 mb-10">
+      <div id="carousel" className="carousel py-10 mb-10">
         <div ref={trackRef} className="track flex">
           <div
             ref={wrapperRef}

@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
-import headshot from '../img/home-hero.webp';
+import headshot from '../img/headshot-transparent-2026.webp';
 
 const HomeHero = () => {
   return (
     <div className="hero pt-12 md:pt-16 pb-10">
       <div className="hero-content flex flex-row flex-wrap md:flex-nowrap">
-        <div className="w-3/4 sm:w-1/2 pb-7 text-center sm:text-start">
+        <div className="pb-7 text-center sm:text-start">
           <p className='job-title-tag pb-5 justify-center sm:justify-normal'>Front End Developer</p>
           <h1 className="hero-header text-5xl lg:text-8xl font-bold">Adam<span className='last-name'>Herro</span></h1>
           <p className="hero-info py-6 lg:w-3/4">
@@ -27,11 +27,13 @@ const HomeHero = () => {
             </Link>
           </div>
         </div>
-        <img
-          src={headshot}
-          alt="Adam"
-          className="headshot w-[300px] xl:w-[400px] shadow-2xl"
-        />
+        <div className="img-border-1 flex justify-center">
+          <img
+            src={headshot}
+            alt="Adam"
+            className="headshot w-[300px] xl:w-[400px] shadow-2xl"
+          />
+        </div>
       </div>
     </div>
   );
