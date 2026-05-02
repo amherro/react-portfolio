@@ -320,13 +320,3 @@ footer p {
   width: 355px;
   height: 136px;
 }
-
-@keyframes scroll-left {
-  from {
-    transform: translate3d(0, 0, 0);
-  }
-
-  to {
-    transform: translate3d(calc(-1 * var(--scroll-distance)), 0, 0);
-  }
-}

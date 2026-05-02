@@ -5,9 +5,9 @@ const HomeProjectCard = ({ title, description, tags = [] }) => {
         <div className='project-container'>
             <h3 className='project-title'>{title}</h3>
             <p>{description}</p>
-            <p>{tags.map(tag =>
-                <p>{tag}</p>
-            )}</p>
+            <div>{tags.map((tag, index) =>
+                <p key={index}>{tag}</p>
+            )}</div>
         </div>
     )
 }

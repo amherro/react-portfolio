@@ -6,7 +6,7 @@ const TechnologyCard = ({ techName, imgSrc, altText }) => {
         <img
           src={imgSrc}
           alt={altText}
-          className="logo w-[3rem] h-[3rem] pt-[10px] pr-5"
+          className="logo w-[3.5rem] h-[3rem] pt-[10px] pr-5"
         />
         <h3 className="tech-name">{techName}</h3>
       </div>

@@ -1,42 +1,29 @@
 import htmlImg from '../img/html-logo.svg';
 import cssImg from '../img/css-logo.svg';
 import reactImg from '../img/react-logo.svg';
+import goImg from '../img/GoLang.svg';
 import jsImg from '../img/javascript-logo.svg';
 import gsapImg from '../img/greensock-logo.svg';
 import tailwindImg from '../img/tailwindcss-logo.svg';
 import TechnologyCard from './TechnologyCard';
 
-import { useRef, useEffect } from 'react';
-
 const HomeTechnologies = () => {
-  const trackRef = useRef(null);
-  const wrapperRef = useRef(null);
-
-  // useEffect(() => {
-  //   const resetScroll = () => {
-  //     const wrapperWidth = wrapperRef.current.offsetWidth;
-
-  //     trackRef.current.style.setProperty(
-  //       '--scroll-distance',
-  //       `${wrapperWidth}px`,
-  //     );
-  //   };
-  //   resetScroll();
-  //   window.addEventListener('resize', resetScroll);
-
-  //   return () => window.removeEventListener('resize', resetScroll);
-  // }, []);
 
   return (
     <section className="home-technologies flex flex-col pt-20 lg:my-20">
       <h2 className="mx-3 text-center lg:text-start xl:pl-[5.2rem] text-3xl md:text-5xl font-bold">
         Technologies and Skills
       </h2>
-      <div className="tech-card-grid py-10 pb-20 md:mx-20">
+      <div className="tech-card-grid py-10 pb-20 justify-items-center">
         <TechnologyCard
           techName="React"
           imgSrc={reactImg}
           altText="React Logo"
+        />
+        <TechnologyCard
+          techName="Golang"
+          imgSrc={goImg}
+          altText="Golang Logo"
         />
         <TechnologyCard
           techName="Javascript"
