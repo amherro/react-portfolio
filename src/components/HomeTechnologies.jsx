@@ -12,27 +12,65 @@ const HomeTechnologies = () => {
   const trackRef = useRef(null);
   const wrapperRef = useRef(null);
 
-  useEffect(() => {
-    const resetScroll = () => {
-      const wrapperWidth = wrapperRef.current.offsetWidth;
+  // useEffect(() => {
+  //   const resetScroll = () => {
+  //     const wrapperWidth = wrapperRef.current.offsetWidth;
 
-      trackRef.current.style.setProperty(
-        '--scroll-distance',
-        `${wrapperWidth}px`,
-      );
-    };
-    resetScroll();
-    window.addEventListener('resize', resetScroll);
+  //     trackRef.current.style.setProperty(
+  //       '--scroll-distance',
+  //       `${wrapperWidth}px`,
+  //     );
+  //   };
+  //   resetScroll();
+  //   window.addEventListener('resize', resetScroll);
 
-    return () => window.removeEventListener('resize', resetScroll);
-  }, []);
+  //   return () => window.removeEventListener('resize', resetScroll);
+  // }, []);
 
   return (
-    <div className="flex flex-col pt-10 lg:my-20">
-      <h2 className="mb-5 mx-3 pl-3 text-center text-3xl md:text-5xl font-bold">
+    <section className="home-technologies flex flex-col pt-20 lg:my-20">
+      <h2 className="mx-3 pl-[5.2rem] text-3xl md:text-5xl font-bold">
         Technologies and Skills
       </h2>
-      <div id="carousel" className="carousel py-10 mb-10">
+      <div className="flex flex-wrap content-center justify-evenly py-10 pb-20">
+        <TechnologyCard
+          techName="React"
+          imgSrc={reactImg}
+          altText="React Logo"
+        />
+        <TechnologyCard
+          techName="Javascript"
+          imgSrc={jsImg}
+          altText="Javascript Logo"
+        />
+        <TechnologyCard techName="CSS3" imgSrc={cssImg} altText="CSS Logo" />
+        <TechnologyCard
+          techName="HTML5"
+          imgSrc={htmlImg}
+          altText="HTML5 Logo"
+        />
+        <TechnologyCard
+          techName="Tailwind CSS"
+          imgSrc={tailwindImg}
+          altText="Tailwind CSS Logo"
+        />
+        <TechnologyCard
+          techName="GSAP Animation"
+          imgSrc={gsapImg}
+          altText="Greensock Logo"
+        />
+        {/* <TechnologyCard
+          techName="Tailwind CSS"
+          imgSrc={tailwindImg}
+          altText="Tailwind CSS Logo"
+        />
+        <TechnologyCard
+          techName="Tailwind CSS"
+          imgSrc={tailwindImg}
+          altText="Tailwind CSS Logo"
+        /> */}
+      </div>
+      {/* <div id="carousel" className="carousel py-10 mb-10">
         <div ref={trackRef} className="track flex">
           <div
             ref={wrapperRef}
@@ -128,8 +166,8 @@ const HomeTechnologies = () => {
             />
           </div>
         </div>
-      </div>
-    </div>
+      </div> */}
+    </section>
   );
 };
 

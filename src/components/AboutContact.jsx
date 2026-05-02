@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const AboutContact = () => {
   return (
-    <div className="md:grid md:grid-cols-2 flex flex-col items-center p-10">
+    <section className="md:grid md:grid-cols-2 flex flex-col items-center p-10">
       <div className="about-section card card-bordered border-zinc-800 bg-zinc-800 w-[300px] h-[300px] lg:w-[350px] lg:h-[300px] justify-self-center mb-3 py-5 md:m-0">
         <h2 className="card-title self-center p-3 text-3xl md:text-5xl font-bold">
           About Me
@@ -30,7 +30,7 @@ const AboutContact = () => {
           </button>
         </Link>
       </div>
-    </div>
+    </section>
   );
 };
 

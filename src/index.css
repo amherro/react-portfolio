@@ -172,6 +172,7 @@ li {
   width: 60%;
   height: 100%;
   border: 1px solid var(--border-accent);
+  overflow: hidden;
   clip-path: polygon(20px 0%, 100% 0%, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0% 100%, 0% 20px);
 }
 
@@ -183,7 +184,33 @@ li {
   padding-right: 76px;
 }
 
-.carousel {
+.home-technologies {
+  background: var(--bg2);
+}
+
+.tech-card-grid {
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+}
+
+.card {
+  border: 1px solid var(--border);
+  padding: 20px;
+  transition: background 0.2s;
+}
+
+.card:hover {
+  background: var(--bg3);
+}
+
+.tech-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--text);
+  margin-top: 10px;
+}
+
+/* .carousel {
   overflow: hidden;
 }
 
@@ -196,6 +223,16 @@ li {
   width: max-content;
   will-change: transform;
   animation: scroll-left 17s linear infinite;
+} */
+
+.github-home {
+  color: var(--accent);
+  transition: scale 0.15s ease-out;
+  font-size: 14px;
+}
+
+.github-home:hover {
+  scale: 1.05;
 }
 
 .card-wrapper {

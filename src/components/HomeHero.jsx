@@ -3,7 +3,7 @@ import headshot from '../img/headshot-transparent-2026.webp';
 
 const HomeHero = () => {
   return (
-    <div className="hero pt-12 md:pt-16 pb-10">
+    <section className="hero pt-12 md:pt-16 pb-10">
       <div className="hero-content flex flex-row flex-wrap md:flex-nowrap">
         <div className="pb-7 text-center sm:text-start">
           <p className='job-title-tag pb-5 justify-center sm:justify-normal'>Front End Developer</p>
@@ -31,11 +31,12 @@ const HomeHero = () => {
           <img
             src={headshot}
             alt="Adam"
-            className="headshot w-[300px] xl:w-[400px] shadow-2xl"
+            className="headshot w-[300px] xl:w-[400px] max-w-full shadow-2xl"
+
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
