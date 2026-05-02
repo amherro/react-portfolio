@@ -169,7 +169,7 @@ li {
 }
 
 .img-border-1 {
-  width: 60%;
+  width: 40%;
   height: 100%;
   border: 1px solid var(--border-accent);
   overflow: hidden;
@@ -188,11 +188,12 @@ li {
   background: var(--bg2);
 }
 
-.tech-card-grid {
-  grid-template-columns: 0.5fr 2fr 0.5fr;
-}
 
 .card {
+  display: flex;
+  flex-shrink: 0;
+  width: max-content;
+  min-width: 320px;
   border: 1px solid var(--border);
   padding: 20px;
   transition: background 0.2s;
@@ -200,6 +201,12 @@ li {
 
 .card:hover {
   background: var(--bg3);
+}
+
+.tech-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 0.5fr));
+  justify-content: center;
 }
 
 .tech-name {
@@ -210,21 +217,6 @@ li {
   margin-top: 10px;
 }
 
-/* .carousel {
-  overflow: hidden;
-}
-
-.carousel::-webkit-scrollbar {
-  display: none;
-}
-
-.track {
-  display: flex;
-  width: max-content;
-  will-change: transform;
-  animation: scroll-left 17s linear infinite;
-} */
-
 .github-home {
   color: var(--accent);
   transition: scale 0.15s ease-out;
@@ -233,6 +225,12 @@ li {
 
 .github-home:hover {
   scale: 1.05;
+}
+
+.home-projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
 }
 
 .card-wrapper {

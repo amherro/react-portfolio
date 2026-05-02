@@ -4,11 +4,11 @@ import headshot from '../img/headshot-transparent-2026.webp';
 const HomeHero = () => {
   return (
     <section className="hero pt-12 md:pt-16 pb-10">
-      <div className="hero-content flex flex-row flex-wrap md:flex-nowrap">
-        <div className="pb-7 text-center sm:text-start">
-          <p className='job-title-tag pb-5 justify-center sm:justify-normal'>Front End Developer</p>
+      <div className="hero-content flex flex-row flex-wrap lg:flex-nowrap">
+        <div className="flex flex-col items-center pb-7 text-center lg:text-start lg:items-start">
+          <p className='job-title-tag pb-5 justify-center lg:justify-normal'>Front End Developer</p>
           <h1 className="hero-header text-5xl lg:text-8xl font-bold">Adam<span className='last-name'>Herro</span></h1>
-          <p className="hero-info py-6 lg:w-3/4">
+          <p className="hero-info py-6 w-1/2 md:w-1/2">
             Feel free to browse my most recent projects on the Projects page. If
             you would like to get in touch, please use the information on the
             Contact page.
@@ -27,11 +27,11 @@ const HomeHero = () => {
             </Link>
           </div>
         </div>
-        <div className="img-border-1 flex justify-center">
+        <div className="img-border-1 min-w-[40%] flex justify-center">
           <img
             src={headshot}
             alt="Adam"
-            className="headshot w-[300px] xl:w-[400px] max-w-full shadow-2xl"
+            className="headshot w-[300px] xl:w-[400px] min-w-[300px]"
 
           />
         </div>

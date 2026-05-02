@@ -29,10 +29,10 @@ const HomeTechnologies = () => {
 
   return (
     <section className="home-technologies flex flex-col pt-20 lg:my-20">
-      <h2 className="mx-3 pl-[5.2rem] text-3xl md:text-5xl font-bold">
+      <h2 className="mx-3 text-center lg:text-start xl:pl-[5.2rem] text-3xl md:text-5xl font-bold">
         Technologies and Skills
       </h2>
-      <div className="flex flex-wrap content-center justify-evenly py-10 pb-20">
+      <div className="tech-card-grid py-10 pb-20 md:mx-20">
         <TechnologyCard
           techName="React"
           imgSrc={reactImg}
