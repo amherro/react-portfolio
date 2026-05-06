@@ -231,6 +231,73 @@ li {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
+  margin: 0 5rem;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  padding: 2rem;
+  min-height: 18rem;
+  transition: background 0.2s;
+}
+
+.project-container:hover {
+  background: var(--bg3);
+}
+
+.project-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--text);
+}
+
+.project-description {
+  color: var(--text-muted);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.project-tag {
+  color: var(--accent2);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  border: 1px solid rgba(124, 109, 250, 0.3);
+  border-radius: 10px;
+  margin: 20px 20px 0 0;
+  padding: 5px;
+}
+
+.project-arrow {
+  align-self: flex-end;
+  color: var(--text-dim);
+  font-size: 1.2rem;
+  transition: all 0.2s;
+  margin-top: 4rem;
+}
+
+.project-container:hover .project-arrow {
+  color: var(--accent);
+  transform: translate(4px, -4px);
+}
+
+.home-projects-btn {
+  background: var(--accent);
+  font-family: var(--font-mono);
+  color: #0a0a0f;
+  font-size: 12px;
+  font-weight: 600;
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%);
+  width: 44.3%;
+  transition: all 0.2s;
+  margin: 0 5rem;
+}
+
+.home-projects-btn:hover {
+  background-color: #00ffb3;
+  transform: translateY(-1px);
 }
 
 .card-wrapper {
