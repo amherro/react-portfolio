@@ -2,31 +2,22 @@ import { Link } from 'react-router-dom';
 
 const AboutContact = () => {
   return (
-    <section className="md:grid md:grid-cols-2 flex flex-col items-center p-10">
-      <div className="about-section card card-bordered border-zinc-800 bg-zinc-800 w-[300px] h-[300px] lg:w-[350px] lg:h-[300px] justify-self-center mb-3 py-5 md:m-0">
-        <h2 className="card-title self-center p-3 text-3xl md:text-5xl font-bold">
-          About Me
-        </h2>
-        <p className="card-body text-center">
-          Visit the About page to learn a little more about who I am.
-        </p>
-        <Link to="/about" className="card-actions justify-center mt-0">
-          <button className="btn btn-primary bg-green-700 border-green-700 hover:bg-green-900 hover:border-green-900 mb-4 self-center w-1/2">
-            About
+    <section className="about-contact-home">
+      <div className="about-home-section">
+        <h3 className="about-title">Who I am</h3>
+        <p className="about-text">I'm a front end developer passionate about turning ideas into polished, functional web experiences. I care deeply about code quality, performance, and the small details that make a product feel right.</p>
+        <Link to="/about">
+          <button className="home-about-button">
+            About me →
           </button>
         </Link>
       </div>
-      <div className="contact-section card card-bordered border-zinc-800 w-[300px] h-[300px] lg:w-[350px] lg:h-[300px] mb-3 py-5 justify-self-center bg-zinc-800">
-        <h2 className="card-title self-center p-3 text-3xl lg:text-5xl font-bold">
-          Contact
-        </h2>
-        <p className="card-body text-center">
-          Visit the Contact page if you would like to get in touch or are
-          interested in working together.
-        </p>
-        <Link to="/contact" className="card-actions justify-center">
-          <button className="btn btn-primary bg-green-700 border-green-700 hover:bg-green-900 hover:border-green-900 mb-4 self-center w-1/2">
-            Contact
+      <div className="contact-home-section">
+        <h3 className="about-title">Let's Work Together</h3>
+        <p className="contact-text">Interested in collaborating or have a project in mind? I'm always open to discussing new opportunities and ideas.</p>
+        <Link to="/contact">
+          <button className="home-contact-button">
+            Get in touch →
           </button>
         </Link>
       </div>
