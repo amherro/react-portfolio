@@ -20,6 +20,15 @@ const Projects = [
   },
   {
     id: 2,
+    title: 'URL Health Checker',
+    // img: vaudify,
+    description:
+      'A Go CLI program that takes a list of URLs, checks their status, and returns the results in a table.',
+    // liveUrl: 'https://vaudify.com/',
+    githubUrl: 'https://github.com/amherro/url-health-checker',
+  },
+  {
+    id: 3,
     title: 'Hockey Store',
     img: hockeyShop,
     description:
@@ -28,7 +37,7 @@ const Projects = [
     githubUrl: 'https://github.com/amherro/react-portfolio',
   },
   {
-    id: 3,
+    id: 4,
     title: 'To Do App',
     img: toDoPhoto,
     description:
@@ -37,7 +46,7 @@ const Projects = [
     githubUrl: 'https://github.com/amherro/to-do-react-app',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Resume Creator',
     img: resumeImg,
     description:
@@ -46,7 +55,7 @@ const Projects = [
     githubUrl: 'https://github.com/amherro/CV-React-App',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Library App',
     img: libraryPhoto,
     description:
@@ -55,7 +64,7 @@ const Projects = [
     githubUrl: 'https://github.com/amherro/Library',
   },
   {
-    id: 6,
+    id: 7,
     title: 'Mobile Calculator',
     img: calcImg,
     description:
@@ -64,7 +73,7 @@ const Projects = [
     githubUrl: 'https://github.com/amherro/Calculator-App',
   },
   {
-    id: 7,
+    id: 8,
     title: 'Etch-A-Sketch',
     img: etchImg,
     description:

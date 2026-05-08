@@ -20,8 +20,9 @@ const HomeProjects = () => {
       </div>
       <div className="home-projects-grid">
         <HomeProjectCard title="Ad Builder" description="An internal tool for my current team to develop advertisements with a user interface and AI capabilities." tags={["React", "Zustand", "Tailwind", "Claude"]} url="https://ad-builder.up.railway.app/" />
-        <HomeProjectCard title="Hockey Store" description="A React, Express, and Stripe hockey store." tags={["React", "Express", "Tailwind", "Stripe"]} url="https://hockey-ecommerce-store.onrender.com/" />
+        <HomeProjectCard title="URL Health Checker" description="A Go CLI program that takes a list of URLs, checks their status, and returns the results in a table." tags={["Golang", "Concurrency", "Goroutines", "Channels", "Testing"]} url="https://github.com/amherro/url-health-checker" />
         <HomeProjectCard title="Vaudify" description="Vaudify is a web tool that extracts audio from video files and downloads them as MP3s" tags={["Astro", "React", "Express", "FFmpeg", "Tailwind"]} url="https://vaudify.com/" />
+        <HomeProjectCard title="Hockey Store" description="A React, Express, and Stripe hockey store." tags={["React", "Express", "Tailwind", "Stripe"]} url="https://hockey-ecommerce-store.onrender.com/" />
       </div>
       <Link to="/projects">
         <button className="home-projects-btn">View All Projects</button>
