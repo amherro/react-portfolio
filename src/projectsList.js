@@ -1,4 +1,5 @@
 import vaudify from './img/vaudify-image.jpg';
+import urlHealthChecker from './img/url-health-checker.gif';
 import hockeyShop from './img/hockey-pro-shop-img.png';
 import toDoPhoto from './img/todo-app.png';
 import libraryPhoto from './img/library_screenshot.png';
@@ -21,7 +22,7 @@ const Projects = [
   {
     id: 2,
     title: 'URL Health Checker',
-    // img: vaudify,
+    img: urlHealthChecker,
     description:
       'A Go CLI program that takes a list of URLs, checks their status, and returns the results in a table.',
     // liveUrl: 'https://vaudify.com/',
